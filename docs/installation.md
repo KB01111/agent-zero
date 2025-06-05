@@ -546,7 +546,18 @@ Agent Zero needs to be configured further to redirect some functions to the Dock
 <img src="res/setup/image-23-1.png" alt="run ui" width="400"/>
 <br><br>
 
-      
+### Building a Native Installer
+If you want a standalone desktop version, generate platform installers using:
+
+```bash
+cargo tauri build
+```
+
+The resulting files will be available in `src-tauri/target/release/bundle` when
+the build finishes. Make sure the `tauri` CLI and project dependencies are
+installed before running the command.
+
+
 ### Conclusion
 After following the instructions for your specific operating system, you should have Agent Zero successfully installed and running. You can now start exploring the framework's capabilities and experimenting with creating your own intelligent agents. 
 

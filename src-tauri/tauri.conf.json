@@ -1,0 +1,21 @@
+{
+  "build": {
+    "distDir": "../webui",
+    "devPath": "../webui"
+  },
+  "tauri": {
+    "bundle": {
+      "active": true,
+      "targets": ["deb", "appimage", "msi", "dmg"]
+    },
+    "windows": [
+      {
+        "label": "main",
+        "url": "index.html"
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self' 'unsafe-inline' data:"
+    }
+  }
+}
